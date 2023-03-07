@@ -1,33 +1,42 @@
-<center><h1>0x01. Basic authentication</h1></center>
+# Simple API
 
-<b>Back-end  Authentification</b>
+Simple HTTP API for playing with `User` model.
 
-<img src="https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/5/6ccb363443a8f301bc2bc38d7a08e9650117de7c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220726%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220726T041142Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=97ee45bb0e566d8775a32ca370619b99da58e63bd30734996f7fc11ae80c8d80">
 
-<h2>Resources</h2>
+## Files
 
-<p>
-<b>Read or watch:</b>
+### `models/`
 
-<ul>
-<li><a href="https://alx-intranet.hbtn.io/rltoken/ssg5umgsMk5jKM8WRHk2Ug">REST API Authentication Mechanisms</a></li>
-<li><a href="https://alx-intranet.hbtn.io/rltoken/RpaPRyKx1rdHgRSUyuPfeg">Base64 in Python</a></li>
-<li><a href="https://alx-intranet.hbtn.io/rltoken/WlARq8tQPUGQq5VphLKM4w">HTTP header Authorization</a></li>
-<li><a href="https://alx-intranet.hbtn.io/rltoken/HG5WXgSja5kMa29fbMd9Aw">Flask</a></li>
-<li><a href="https://alx-intranet.hbtn.io/rltoken/br6Rp4iMaOce6EAC-JQnOw">Base64 - concept</a></li>
-</ul>
-</p>
+- `base.py`: base of all models of the API - handle serialization to file
+- `user.py`: user model
 
-<h2>Learning Objectives</h2>
+### `api/v1`
 
-<p>
-At the end of this project, you are expected to be able to <a href="https://alx-intranet.hbtn.io/rltoken/swiIZazfz7mspY1vjuy_Zg">explain to anyone</a>, <b>without the help of Google:</b>
+- `app.py`: entry point of the API
+- `views/index.py`: basic endpoints of the API: `/status` and `/stats`
+- `views/users.py`: all users endpoints
 
-<b>General</b>
-<li>What authentication means</li>
-<li>What Base64 is</li>
-<li>How to encode a string in Base64</li>
-<li>What Basic authentication means</li>
-<li>How to send the Authorization header</li>
-</ul>
-</p>
+
+## Setup
+
+```
+$ pip3 install -r requirements.txt
+```
+
+
+## Run
+
+```
+$ API_HOST=0.0.0.0 API_PORT=5000 python3 -m api.v1.app
+```
+
+
+## Routes
+
+- `GET /api/v1/status`: returns the status of the API
+- `GET /api/v1/stats`: returns some stats of the API
+- `GET /api/v1/users`: returns the list of users
+- `GET /api/v1/users/:id`: returns an user based on the ID
+- `DELETE /api/v1/users/:id`: deletes an user based on the ID
+- `POST /api/v1/users`: creates a new user (JSON parameters: `email`, `password`, `last_name` (optional) and `first_name` (optional))
+- `PUT /api/v1/users/:id`: updates an user based on the ID (JSON parameters: `last_name` and `first_name`)
