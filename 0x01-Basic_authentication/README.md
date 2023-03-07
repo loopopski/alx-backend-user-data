@@ -2,7 +2,7 @@
 
 <b>Back-end  Authentification</b>
 
-https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/5/6ccb363443a8f301bc2bc38d7a08e9650117de7c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230307%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230307T040946Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=b4acf43616b55e0afe7129a43a7698e73d4f24fda12cb416d606993e6f4abebd
+<img src="https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/5/6ccb363443a8f301bc2bc38d7a08e9650117de7c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230307%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230307T040946Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=b4acf43616b55e0afe7129a43a7698e73d4f24fda12cb416d606993e6f4abebd">
 
 <h2>Resources</h2>
 
